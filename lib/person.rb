@@ -1,7 +1,7 @@
 class Person
   def initialize ( attributes )
   attributes.each do |key, value|
-    Person.attr_accessor(key)
+    Person.attr_reader(key)
     self.send("#{key}=", value) 
   end
   end
